@@ -1,0 +1,330 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-X: hidden;
+}
+
+nav{
+    min-height: 100%;
+    min-width: 97%;
+    background-size: cover;
+
+}
+
+header{
+    background-color:#285dcc;
+    height: 4.5rem;
+    width: 100%;
+    border-bottom: 4px solid white;
+}
+
+header img{
+    height: 3.5rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 20px auto auto auto;
+    grid-template-rows: 50px auto auto 25%;
+    grid-gap: 12px; 
+    padding: 0.5%;
+    width: 98.8%;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    z-index: 1;
+}
+
+.grid-container > div{
+    text-align: center;
+    font-size: 30px;
+}
+
+#pesquisa {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+}
+
+#menu {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 5; 
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 10px;
+    overflow:auto; 
+}
+
+#geral{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: block;
+}
+
+#plantacao{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#sensor{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+}
+
+#aviso{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#pesquisa .pesquisa_input{
+    height: 100%;
+    width: 85%;
+    border:none;
+    border-radius:20px 0 0 20px;
+    font-size: 17px;
+    padding-left: 20px;
+    color: black;
+}
+
+#pesquisa .filtro_input{
+    height: 100%;
+    width: 15%;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding-left: 20px;
+    font-size: 17px;
+    border: none;
+}
+
+#aviso {
+    background-color: rgba(255, 255, 255, 0.705);
+    font-size: 1rem;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(105, 105, 105);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.287);
+}
+
+div#geral div{
+    background-color:  rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.grafico {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+.grafico canvas {
+    width: 75%;
+    height: 100%;
+}
+
+.dados{
+    margin-left: -0.3%;
+    width: 24%;
+    height: 99.5%;
+    border-left: solid 5px rgba(82, 82, 82, 0.575);
+}
+
+.dados div{
+    width: 100%;
+    height: 33%;
+    border-bottom: solid 2px rgba(58, 58, 58, 0.575);
+    display: block;
+}
+
+.dados div p{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(65, 65, 65);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    margin: 0;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+.dados div span{
+    height: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: 30px;
+    float: right;
+    margin-right: 40%;
+    padding-top: 15px;
+
+}
+
+.buttondrop{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    height: 12%;
+    width: 100%;
+    padding-left: 10%;
+    font-size: 15px;
+    color: rgb(46, 46, 46);
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown a{
+    border: none;
+    cursor: pointer;
+    height: 15%;
+    width: 84.5%;
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 0 10px 12%;
+
+}
+
+.dropdown button {
+    border: none;
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    float: left;
+    padding: 10px 0 10px 12%;
+    text-align: left;
+    text-decoration: none;
+    background-color: white;
+    font-weight: 600;
+}
+
+#formPlantacao {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-top: -150%;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+#desconectar {
+    height: 10%;
+    width: 100%;
+    font-size: 14px;
+    background-color: white;
+    text-align: left;
+    padding-left: 10%;
+    border:none;
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+    cursor: pointer; 
+}
+
+#form_plantacao{
+    position: relative;
+    background-color: white;
+    width: 45%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#form_plantacao h2{
+    padding-top: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+#form_plantacao input{
+    display: block;
+    height: 13%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    background-color: #3584dd; 
+    border:none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#form_plantacao input:hover{
+    transform: scale(1.01);
+}
+
+#form_plantacao input::placeholder{
+    color: white;
+}
+
+#form_plantacao button[type="submit"]{
+    background-color: orange;
+    height: 12%;
+    width: 45%;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#form_plantacao button[type="submit"]:hover{
+    background-color: rgb(255, 145, 0);
+    transform: scale(1.03);
+}
+
+#form_plantacao button#cancelar{
+    cursor: pointer;
+    background-color: transparent;
+    color: #3584dd;
+    font-size: 0.9rem;
+    border:none;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+
+#form_plantacao button#cancelar:hover{
+    color: #2b6cb8;
+    transform: scale(1.02);
+}
+
+

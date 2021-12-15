@@ -1,0 +1,79 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.cabecalho{
+    min-height: 100vh;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: rgb(42,177,11);
+    background: linear-gradient(183deg, rgb(34, 180, 2) 40%, rgba(30,255,169,0) 97%);
+}
+
+.cabecalho img{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+}
+
+.fundo{
+    height: 75%;
+    width: 100%;
+    margin-top: -40%;
+    z-index: -5;
+    position: relative;
+}
+
+.informacao{
+    height: 40vh;
+    width: 100vw;
+    padding-top: 13rem;
+}
+
+ a button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(34, 180, 2);
+    border: none;
+    border-radius: 5rem;
+    height: 35%;
+    width: 45%;
+    transition: 0.5s;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a button:hover{
+    background-color: rgb(26, 134, 2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+}
+
+footer{
+    background-color:rgb(44, 123, 202); 
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+}
+
+footer h3{
+    padding-top: 1.2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+

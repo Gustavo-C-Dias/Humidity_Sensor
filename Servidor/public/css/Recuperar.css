@@ -1,0 +1,72 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color:#285dcc;
+    height: 4.5rem;
+    width: 100%;
+    border-bottom: 4px solid white;
+}
+
+a>img{
+    height: 3.5rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+nav{
+    background-image: url(../Assets/FundoPlanta.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+main {
+    height: 65%;
+    width: 30%;
+    background-color: rgba(255,255,255,0.4);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+main img {
+    height: 27%;
+    width: 90%;
+    margin-left: 4.5%;
+    margin-top: 4%;
+}
+
+form input{
+    background-color: #3584dd; 
+    width: 90%;
+    height: 3rem;
+    margin-left: 0.6rem;
+    margin-top: 1.1rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    outline: none;
+    padding-left: 1.1rem;
+    transition: 0.5s;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+form input:focus{
+    background-color: rgba(25, 162, 216, 0.9);
+    border: solid 3px white;
+}
+
+input::placeholder{
+    color: white;
+}
